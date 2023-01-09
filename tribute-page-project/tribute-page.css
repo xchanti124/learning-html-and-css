@@ -1,0 +1,31 @@
+#main {
+  background-color: black;
+  color: white;
+  padding-top: 40px;
+}
+
+.first-part {
+  text-align: center;
+  color: white;
+  /* background-image: url("https://m.media-amazon.com/images/M/MV5BNzc5MTczNDQtNDFjNi00ZDU5LWFkNzItOTE1NzQzMzdhNzMxXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg") ; */
+}
+
+.quote {
+  font-size: 20px;
+}
+
+#img-div {
+  text-align: center;
+}
+
+.main-content-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.main-content {
+  text-align: center;
+  font-size: 18px;
+  padding: 0px 40px 0px 40px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="survey-form.css"/>
+    <title>
+      Survey Form
+    </title>
+  </head>
+  <body>
+    <!-- span.class#id>div*5 -->
+    <h1 id="title">
+      Survey Form
+    </h1>
+    <p id="description">
+      Thank you for taking your time to answer this sleep-quality survey
+    </p>
+    <form id="survey-form">
+      <fieldset class="personal-data">
+        <label for="name" id="name-label" class="name">
+          Name
+          <input id="name" type="text" placeholder="Enter Your Name" required/>
+        </label>
+        <label for="email" id="email-label" class="email">
+          E-Mail
+          <input id="email" type="email" placeholder="Enter Your E-Mail" required/>
+        </label>
+        <label for="number" id="number-label" class="number">
+          Age (optional)
+          <input id="number" type="number" max="120" min="15" placeholder="Enter Your Age"/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown" class="dropdown">
+          How would you rate your sleep quality?
+          <select id="dropdown" name="sleep-quality-rating">
+            <option value="">(select one)</option>
+            <option value="1">Very good</option>
+            <option value="2">Fairly good</option>
+            <option value="3">Fairly poor</option>
+            <option value="4">Very poor</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="newspaper-referral" class="radio1">
+          Referred from newspaper article
+          <input id="newspaper-referral" type="radio" name="referral-type" value="1"/>
+        </label>
+        <label for="online-referral" class="radio2">
+          Referred from online article
+          <input id="online-referral" type="radio" name="referral-type" value="2"/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="factors-sleep-quality" class="factors-title">
+          Which of these factors do you think affect sleep quality? (check all that apply)
+        </label>
+        <label for="factors-sleep-quality" class="sleep-schedule">
+          Sleep Schedule
+          <input id="factors-sleep-quality" type="checkbox" value="1"/>
+        </label>
+        <label for="factors-sleep-quality" class="sleep-environment">
+          Sleep Environment
+          <input id="factors-sleep-quality" type="checkbox" value="2"/>
+        </label>
+        <label for="factors-sleep-quality" class="diet">
+          Diet
+          <input id="factors-sleep-quality" type="checkbox" value="3"/>
+        </label>
+        <label for="factors-sleep-quality" class="snoring">
+          Snoring
+          <input id="factors-sleep-quality" type="checkbox" value="4"/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="additional-suggestions" class="textarea-description">
+          Provide further factors. (optional)
+          <textarea id="additional-suggestions" name="additional-suggestions" rows="5" cols="30" class="textarea">
+          </textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
